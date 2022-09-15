@@ -52,20 +52,20 @@ Higher versions should be also available.
 cd code/
 python process_data.py --session 1
 ```
-Then you will get `icdm2022_session1.pt` in `/data` folder.
+Then you will get `icdm2022_session1.pt` in the `/data` folder.
 
 +  Session II
 ```bash
 cd code/
 python process_data.py --session 2
 ```
-Then you will get `icdm2022_session2.pt` in `/data` folder.
+Then you will get `icdm2022_session2.pt` in the `/data` folder.
 
 NOTE: other unnecessary files are manually removed after pre-processing.
 
 ## How to Run the Model
 
-Codes of Session I and Session II are distinguished by their suffixes `_sess1` and `_sess2`.
+Codes of Session I and Session II are marked by their suffixes `_sess1` and `_sess2`.
 
 
 ## Session I
@@ -80,7 +80,7 @@ python main_sess1.py --lp --full --n-epoch 30  && python inference_sess1.py --lp
 + `--full` indicates using full training datasets (including validation set)
 + We run 30 epochs in Session I to avoid overfitting
 
-After finished training, there would be two files in `code/` directly:
+After finished, there would be two files in the `code/` directly:
 + `model_sess1.pth`: trained model
 + `session1_record.txt`: running logs
 
@@ -96,7 +96,7 @@ python main_sess2.py --n-epoch 100 --full && python inference_sess2.py
 + `Masked Label Propagation` is not used in Session II as there are no labels provided
 
 
-After finished training, there would be two files in `code/` directly:
+After finished, there would be two files in the `code/` directly:
 + `model_sess2.pth`: trained model
 + `session2_record.txt`: running logs
 
